@@ -1,22 +1,11 @@
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <application
-        android:allowBackup="false"
-        android:label="My Hide App"
-        android:theme="@android:style/Theme.Material.Light.NoActionBar">
-
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-
+    <application android:allowBackup="false" android:label="My Hide App" android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <activity android:name=".MainActivity" android:exported="true" />
+        <activity-alias android:name=".LauncherAlias" android:targetActivity=".MainActivity" android:enabled="true" android:exported="true" android:label="My Hide App">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-        </activity>
-
+        </activity-alias>
     </application>
-
 </manifest>
